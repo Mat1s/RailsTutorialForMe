@@ -1,0 +1,6 @@
+Hi <%= @user.name %>
+
+Welcome to SA!
+Link to activation mails - 
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
+Click to activate it!

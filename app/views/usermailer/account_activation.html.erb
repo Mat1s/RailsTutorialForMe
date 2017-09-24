@@ -1,0 +1,7 @@
+<h1>S A</h1>
+<p> Hello, <%= @user.name %> </p>
+
+<p>
+  Welcome to SA! Link to activation mails - 
+</p>
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
